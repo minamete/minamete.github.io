@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next start",
     "build": "next build",
     "start": "next start --port ${PORT:-3000}"
   },
