@@ -22,7 +22,7 @@ export default function Home() {
         </div>
         <div className={styles.row}>
           <PageContent color="white">
-            <p>I am constantly dying on the inside, someone help me. I need to fill up this space so that my website looks better. This is all just bs filler text. I really do hope I remember to change this later. Please someone help me, I need a therapist. I am stuck in programming hell.</p>
+            <p>I am currently dying on the inside, someone help me. I need to fill up this space so that my website looks better. This is all just bs filler text. I really do hope I remember to change this later. Please someone help me, I need to fill this up with more text so that the formatting works, because I suck at css.</p>
           </PageContent>
         </div>
         <div className={styles.row}>
