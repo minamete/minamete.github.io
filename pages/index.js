@@ -10,6 +10,7 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
+        <meta name="google-site-verification" content="RXHzVUH7lISEutInvcuIAbF7xI9HFS_ANP5jsQmgFHY" />
         <title>Home</title>
       </Head>
 
