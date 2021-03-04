@@ -3,6 +3,8 @@ export const StyledPageContent = styled.section`
 
     display: flex;
     flex:1;
+    height: 100%;
+    width: 100%;
 
     flex-direction: column;
     justify-content: center;
@@ -23,5 +25,10 @@ export const StyledPageContent = styled.section`
         font-weight: normal;
         font-size: medium;
     }
+
+    h2 {
+        margin:-2%;
+        font-size: large;
+      }
 `
 

@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import PageContent from '../components/PageContent'
 import {useState} from 'react';
 
-export default function Home() {
+const About = () => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -44,3 +44,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default About;

@@ -2,29 +2,46 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
 import PageContent from '../components/PageContent'
+import {useState} from 'react';
 
-export default function Home() {
+const ContactInfo = () => {
+  const [open, setOpen] = useState(false);
+
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
         <title>Contact Me</title>
       </Head>
 
       <main className={styles.main}>
-        <Header text="Highly poggers champion: Contact Info"></Header>
-        <h1>Social Media</h1>
-        <table class="contactmetable">
-                <tr>
-                    <th>Discord: </th>
-                    <td>crystal ball colon#3732</td>
-                </tr>
-                <tr>
-                    <th>Instagram:</th>
-                    <td>laura.c.38</td>
-                </tr>
-            </table>
-        </main>
+        <Header text="Minamete: Contact Info" open={open} setOpen={setOpen}/>
+        <div className={styles.row}>
+          <PageContent color="black" foregroundColor="white">
+            <h1>Contact Info</h1>
+          </PageContent>
+        </div>
+        <div className={styles.row}>
+          <PageContent color="white">
+            <p>test</p>
+          </PageContent>
+        </div>
+        <div className={styles.row}>
+          <PageContent color="cadetblue"> <p>Who am I?</p></PageContent>
+          <PageContent color="darkseagreen"><p>Why are we here?</p></PageContent>
+        </div>
+        <div className={styles.row}>
+
+        </div>
+        <div className={open ? styles.dimmer : null}/>
+        <footer className={styles.row}>
+          <PageContent color="black" foregroundColor="white">
+            <p>No copyright here haha (c) 2021 for CAS purposes</p>
+          </PageContent>
+      </footer>
+      </main>
+
 
     </div>
   )
 }
+export default ContactInfo;
