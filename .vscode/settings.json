@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/4da8f6e9-a09d-4108-ae0c-d0cef22ac4c2/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/minamete",
+    "appService.deploySubpath": "."
+}
