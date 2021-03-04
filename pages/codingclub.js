@@ -17,12 +17,12 @@ export default function Home() {
         <Header text="Minamete: Coding Club AMHS" open={open} setOpen={setOpen}/>
         <div className={styles.row}>
           <PageContent color="black" foregroundColor="white">
-            <h1>About Me</h1>
+            <h1>AMHS Coding Club</h1>
           </PageContent>
         </div>
         <div className={styles.row}>
           <PageContent color="white">
-            <p>I am currently dying on the inside, someone help me. I need to fill up this space so that my website looks better. This is all just bs filler text. I really do hope I remember to change this later. Please someone help me, I need to fill this up with more text so that the formatting works, because I suck at css.</p>
+
           </PageContent>
         </div>
         <div className={styles.row}>
