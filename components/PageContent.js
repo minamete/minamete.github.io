@@ -7,6 +7,6 @@ export default function PageContent({children, color, foregroundColor='black'}) 
         <StyledPageContent color={color} foregroundColor={foregroundColor}>
             {children}
         </StyledPageContent>
-    )
+    );
 }
 
