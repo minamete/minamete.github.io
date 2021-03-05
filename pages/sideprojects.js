@@ -25,7 +25,7 @@ export default function Home() {
                 <a href="/side-projects/brian-shi-sim/">Notable quote generator</a>
               </PageContent>
               <PageContent color="white">
-                <p>This very cool terribly coded JavaScript-based web application generates a possibly NSFW quote to cheer you up, using my wonderful JSON-based database and totally not stolen from anyone. Don't look at the link, please. It's not suspicious at all.</p>
+                <p>This very cool JavaScript-based web application generates a possibly NSFW quote to cheer you up, using my wonderful JSON-based ''database'' and totally not based off of any real people. Don't look at the URL, please. It's not suspicious at all.</p>
               </PageContent>
             </div>
         <div className={styles.row}>
