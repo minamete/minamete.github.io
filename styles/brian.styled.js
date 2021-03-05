@@ -56,5 +56,9 @@ const StyledBrian = styled.section`
       @keyframes blink-caret {
         from, to { border-color: transparent }
       }
-`
+
+      h1 {
+            padding: 2%;
+      }
+`   
 export default StyledBrian;

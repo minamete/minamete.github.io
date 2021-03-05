@@ -28,6 +28,13 @@ const brianData = [
     "well, no, incest is fine",
     "You would have to strangle me and call me Onii-chan for me to write another English essay",
     "Homosexual people are not known for their excellent memory",
+    "GIVE ME A PICTURE OF HER THIGHS YOU DUMB BOT",
+    "The only good thing about her is that she likes incest",
+    "WHERE ARE HER EGGS? THERE ARE NO EGGS IN THIS PHOTO",
+    "Hello, your favourite homosexual is back.",
+    "Okay they're slaves now.",
+    "Well you're not sticking the whole thing into him",
+    "oh wait a minute, i've been sending these in the wrong channel, please disregard what I have said in the last 3 messages",
     "okay i'd like to remind everyone; I don't sound like a loser for obsessing over a virtual girl's thighs, I sound like a loser because I am one"
     ]
     

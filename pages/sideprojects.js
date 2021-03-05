@@ -38,6 +38,8 @@ export default function Home() {
             <h1>Music projects</h1>
           </PageContent>
         </div> 
+        <div className={open ? styles.dimmer : null}/>
+
       </main>
 
     </div>
