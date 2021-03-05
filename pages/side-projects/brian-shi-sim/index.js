@@ -19,9 +19,9 @@ export default function Brian() {
       setTypewriterEnded(false);
       if(quotes == null) return;
       let tempQuote = brianShiQuote;
-     // while(tempQuote == brianShiQuote) {
+      while(tempQuote == brianShiQuote) {
         tempQuote = quotes[Math.floor(Math.random() * quotes.length)];
-     // }
+      }
       setBrianShiQuote(tempQuote);
       setTypewriterStarted(true);
       setTimeout(() => {setTypewriterEnded(true)}, 3000);
