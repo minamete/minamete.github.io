@@ -15,8 +15,30 @@ export default function Home() {
 
       <main className={styles.main}>
         <Header text="Highly poggers champion: side projects" open={open} setOpen={setOpen}/>
-        <PageContent text="I'm working on a few side projects right now, this being one of them. I'll probably put them here later to pad my resume"/>
-        </main>
+        <div className={styles.row}>
+          <PageContent color="black" foregroundColor="white">
+            <h1>Programming projects</h1>
+          </PageContent>
+        </div>  
+        <div className={styles.colrow}>
+              <PageContent color="cadetblue">
+                <a href="/side-projects/brian-shi-sim/">Notable quote generator</a>
+              </PageContent>
+              <PageContent color="white">
+                <p>This very cool terribly coded JavaScript-based web application generates a possibly NSFW quote to cheer you up, using my wonderful JSON-based database and totally not stolen from anyone. Don't look at the link, please. It's not suspicious at all.</p>
+              </PageContent>
+            </div>
+        <div className={styles.row}>
+          <PageContent color="black" foregroundColor="white">
+            <h1>Art projects</h1>
+          </PageContent>
+        </div> 
+        <div className={styles.row}>
+          <PageContent color="black" foregroundColor="white">
+            <h1>Music projects</h1>
+          </PageContent>
+        </div> 
+      </main>
 
     </div>
   )

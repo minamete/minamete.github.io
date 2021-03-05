@@ -26,6 +26,16 @@ export const StyledPageContent = styled.section`
         font-size: medium;
     }
 
+    a {
+        font-size: medium;
+    }
+
+    a:hover {
+        opacity: 0.5;
+        filter: brightness(150%);
+        cursor: pointer;
+    }
+
     h2 {
         margin:-2%;
         font-size: large;
