@@ -2,8 +2,8 @@ import Head from 'next/head'
 import Header from '../../../components/Header'
 import PageContent from '../../../components/PageContent'
 import React, {useState, useEffect} from 'react'
-import StyledBrian from './brian.styled.js'
-import brianData from './brianQuotes';
+import StyledBrian from '../../../styles/brian.styled.js'
+import brianData from '../../../public/brianQuotes';
 export default function Brian() {
     const [typewriterStarted, setTypewriterStarted] = useState(false);
     const [typeWriterEnded, setTypewriterEnded] = useState(false);
