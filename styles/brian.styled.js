@@ -28,7 +28,9 @@ const StyledBrian = styled.section`
         font-family: Consolas, Courier New;
         font-size: large;
         padding: 2% 5%;
-        visibility: ${({started, ended}) => started && !ended ? 'hidden': 'visible'}
+        visibility: ${({started, ended}) => started && !ended ? 'hidden': 'visible'};
+        opacity: ${({started, ended}) => started && !ended ? '0': '1'};
+        transition:visibility 0.3s linear,opacity 0.3s linear;
     }
     button:hover {
         color: cadetblue;
