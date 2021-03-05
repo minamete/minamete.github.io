@@ -20,6 +20,10 @@ const StyledBrian = styled.section`
         border:none;
     }
 
+    .back:active {
+        background-color:black;
+    }
+
     button {
         cursor: pointer; 
         background-color:black;
@@ -42,25 +46,9 @@ const StyledBrian = styled.section`
         box-shadow:none;
         outline: none;
     }
-    .typewriter {
-        overflow: hidden;
-        margin: 0 auto;
-        animation: ${({started,ended}) => started && !ended ? 'typing 2.5s steps(40, end)' : null},
-        blink-caret ${({started,ended}) => started && !ended ? '.75s step-end infinite' : null};
-    }
 
-    @keyframes typing {
-
-        from { width: 0 }
-        to { width: 100% }
-      }
-      
-      @keyframes blink-caret {
-        from, to { border-color: transparent }
-      }
-
-      h1 {
+    h1 {
             padding: 2%;
-      }
+    }
 `   
 export default StyledBrian;

@@ -8,8 +8,20 @@ export default function Brian() {
     const [typewriterStarted, setTypewriterStarted] = useState(false);
     const [typeWriterEnded, setTypewriterEnded] = useState(false);
     const [brianShiQuote, setBrianShiQuote] = useState('');
+    const [{displayedQuote, index}, setDisplayedQuote] = useState({displayedQuote: null, index: 0});
     const [quotes, setQuotes] = useState([]);
 
+    useEffect(()=> {
+      if(brianShiQuote=='') return; //prevent it from running at start
+      //gets here
+      if(index < brianShiQuote.length) {
+        setTimeout(() => {
+          setDisplayedQuote({displayedQuote: displayedQuote+brianShiQuote.charAt(index), index: index+1})
+        }, 3000/brianShiQuote.length)
+      } else {
+        setTypewriterEnded(true);
+      }
+    }, [displayedQuote])
    
     useEffect(()=>{
       setQuotes(brianData);
@@ -23,8 +35,9 @@ export default function Brian() {
         tempQuote = quotes[Math.floor(Math.random() * quotes.length)];
       }
       setBrianShiQuote(tempQuote);
+      //reset displayedQuote, triggering the useEffect hopefully
+      setDisplayedQuote({displayedQuote: '', index: 0}); 
       setTypewriterStarted(true);
-      //setTimeout(() => {setTypewriterEnded(true)}, 3000);
     }
   
     return (
@@ -36,7 +49,7 @@ export default function Brian() {
         <main> 
           <button className = "back" onClick={e => window.location.href="/sideprojects"}>back to side projects</button>
           <div className={typewriterStarted ? "typewriter" : null} onAnimationEnd={() => {setTypewriterEnded(true);}}>
-            <h1>{brianShiQuote}</h1>
+            <h1>{displayedQuote}</h1>
           </div>         
           <button className="generate" onClick={getQuote}>generate</button>
         </main>
