@@ -24,18 +24,18 @@ export default function Brian() {
       }
       setBrianShiQuote(tempQuote);
       setTypewriterStarted(true);
-      setTimeout(() => {setTypewriterEnded(true)}, 3000);
+      //setTimeout(() => {setTypewriterEnded(true)}, 3000);
     }
   
     return (
-      <StyledBrian started = {typewriterStarted} ended = {typeWriterEnded}>
+      <StyledBrian started = {typewriterStarted} ended = {typeWriterEnded} text = {brianShiQuote}>
         <Head>
           <title>Notable Quote Generator</title>
         </Head>
   
         <main> 
           <button className = "back" onClick={e => window.location.href="/sideprojects"}>back to side projects</button>
-          <div  className={typewriterStarted ? "typewriter" : null}>
+          <div className={typewriterStarted ? "typewriter" : null} onAnimationEnd={() => {setTypewriterEnded(true);}}>
             <h1>{brianShiQuote}</h1>
           </div>         
           <button className="generate" onClick={getQuote}>generate</button>

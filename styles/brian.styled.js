@@ -43,8 +43,7 @@ const StyledBrian = styled.section`
     .typewriter {
         overflow: hidden;
         margin: 0 auto;
-        white-space: nowrap;
-        animation: ${({started,ended}) => started && !ended ? 'typing 3.5s steps(40, end)' : null},
+        animation: ${({started,ended}) => started && !ended ? 'typing 2.5s steps(40, end)' : null},
         blink-caret ${({started,ended}) => started && !ended ? '.75s step-end infinite' : null};
     }
 
