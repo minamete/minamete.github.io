@@ -22,7 +22,7 @@ const About = () => {
         </div>
         <div className={styles.row}>
           <PageContent color="white">
-            <p>Hi, I'm Laura! I'm a grade 12 student based in Richmond Hill, Canada, and I jump between my interests very often. Programming is one of them, and even within the </p>
+            <p>Hi, I'm Laura! I'm a grade 12 student based in Richmond Hill, Canada, and I jump between my interests very often. Programming is one of them, as is (hopefully) evident by this website. </p>
           </PageContent>
         </div>
         <div className={styles.row}>
