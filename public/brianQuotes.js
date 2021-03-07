@@ -22,6 +22,7 @@ const brianData = [
     "im practicing chess puzzles because i want to beat up laura",
     "have you had experience with male horniness",
     "LSD? nah. heroine maybe",
+    "mmm yeah i'll use her real good dw",
     "what's cp, contribution points?",
     "When I feel pain, I feel successful, then I feel happy.",
     "i'm not into incest, but-",
