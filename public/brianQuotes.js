@@ -2,6 +2,15 @@
 
 const brianData = [
     "im about to fuck the shit out of everyone",
+    "owo - nuzzles your chest",
+    "50% consent is practically 100% consent",
+    "Six words beneath A-C-T ... Oh! Act 1",
+    "im just a little bit challenged mentally, physically",
+    "Maybe that's why I can only make friends with the 400 basement lolis",
+    "who am i inspiring, all the short people around the world?",
+    "i am purposefully failing my chemistry tests",
+    "w-why is he so close~ uwu",
+    "yeah i like orals a lot, i do decent on them",
     "im feeling homosexual today should i go hit up aram",
     "im sure Aram will learn to accept my true feelings when the time is right",
     "so now Zekiel has more sexual knowledge than me. unacceptable. i must attend church services as well",
