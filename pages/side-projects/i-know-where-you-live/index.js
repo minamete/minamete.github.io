@@ -47,7 +47,7 @@ export default function WhereAmI() {
     return (
         <StyledOhio>
 
-            <h1>Current Address: {address}</h1>
+            <h1>Current Address (estimated): {address}</h1>
             <h1>Latitude: {latitude.toFixed(4) + ' °N'}</h1>
             <h1>Longitude: {longitude.toFixed(4) + ' °W'}</h1>
             <h1>Distance from Ohio: {distanceFromOhio.toFixed(4)} km</h1>

@@ -30,7 +30,7 @@ export default function Home() {
         </div>
         <div className={styles.colrow}>
           <PageContent color="cadetblue">
-            <a href="/side-projects/i-know-where-you-live/">How far am I from Cleveland, Ohio right now?</a>
+            <a href="/side-projects/i-know-where-you-live/">How far am I from Ohio right now?</a>
           </PageContent>
           <PageContent color="white">
             <p>Are you safe from the wrath of Ohio?</p>
