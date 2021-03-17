@@ -4,5 +4,14 @@ module.exports = {
       return {
         '/': { page: '/' }
       };
+    },
+    async redirects() {
+      return [
+        {
+          source: '/sideprojects',
+          destination: '/side-projects',
+          permanent: true,
+        },
+      ]
     }
   };

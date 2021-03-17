@@ -57,7 +57,7 @@ export default function Brian() {
         </Head>
   
         <main> 
-          <button className = "back" onClick={e => window.location.href="/sideprojects"}>back to side projects</button>
+          <button className = "back" onClick={e => window.location.href="/side-projects"}>back to side projects</button>
           <div className={typewriterStarted ? "typewriter" : null} onAnimationEnd={() => {setTypewriterEnded(true);}}>
             <h1>{displayedQuote}</h1>
           </div>         

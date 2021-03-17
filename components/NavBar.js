@@ -12,7 +12,7 @@ export default function NavBar({open}) {
             <a href="/codingclub">
                 AMHS Coding Club
             </a>
-            <a href="/sideprojects">
+            <a href="/side-projects">
                 Side Projects
             </a>
             <a href="/contactinfo">
