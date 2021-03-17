@@ -45,7 +45,8 @@ const brianData = [
     "Okay they're slaves now.",
     "Well you're not sticking the whole thing into him",
     "oh wait a minute, i've been sending these in the wrong channel, please disregard what I have said in the last 3 messages",
-    "okay i'd like to remind everyone; I don't sound like a loser for obsessing over a virtual girl's thighs, I sound like a loser because I am one"
+    "okay i'd like to remind everyone; I don't sound like a loser for obsessing over a virtual girl's thighs, I sound like a loser because I am one",
+    "aram is indeed very innocent and sweet"
     ]
     
     export default brianData;

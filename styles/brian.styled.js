@@ -36,6 +36,11 @@ const StyledBrian = styled.section`
         opacity: ${({started, ended}) => started && !ended ? '0': '1'};
         transition:visibility 0.3s linear,opacity 0.3s linear;
     }
+
+    .generate {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
     button:hover {
         color: cadetblue;
     }
