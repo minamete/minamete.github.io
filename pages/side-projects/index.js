@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import Header from '../components/Header'
-import PageContent from '../components/PageContent'
+import styles from '../../styles/Home.module.css'
+import Header from '../../components/Header'
+import PageContent from '../../components/PageContent'
 import { useState } from 'react'
 
 export default function Home() {
@@ -34,6 +34,14 @@ export default function Home() {
           </PageContent>
           <PageContent color="white">
             <p>Are you safe from the wrath of Ohio?</p>
+          </PageContent>
+        </div>
+        <div className={styles.colrow}>
+          <PageContent color="cadetblue">
+            <a href="/side-projects/value-accumulator/">Value accumulator</a>
+          </PageContent>
+          <PageContent color="white">
+            <p>WIP: accumulating value.</p>
           </PageContent>
         </div>
         <div className={styles.row}>

@@ -1,9 +1,16 @@
+
 export class Effect {
-    constructor(a = null, b = null, previousEffects = null, effectKey) {
+    static effectID = 0;
+    constructor(a = null, b = null, aNum = null, bNum = null, effectKey) {
         this.a = a;
         this.b = b;
-        this.previousEffects = previousEffects;
+        //a and b are its children. a is the left node, b is the right node
+        this.aNum = aNum;
+        this.bNum = bNum;
+        //if they're numbers
         this.effectKey = effectKey;
+        Effect.effectID++;
+        this.effectID = Effect.effectID;
     }
 }
 
@@ -13,10 +20,28 @@ Effect.prototype.getEffectFromKey = () => {
 
 export const EffectDictionary = {
     //basic arithmetic, aka the controls the user can change
-    'addOne' : (a) => ++a,
-    'subtractOne' : (a) => --a,
-    'addMultiple' : (a, b = 0) => a + b,
-    'subtractMultiple' : (a, b = 0) => a - b,
+    addOne : {
+        display : '+',
+        cost: 100, //as a percentage of current value per second
+        function: (a) => ++a
+    },
+    subtractOne : {
+        display : '-',
+        cost : -20,
+        function : (a) => --a
+    },
+
+    //first complex ones
+    addMultiple : {
+        display : '+',
+        cost : 1000,
+        function : (a, b = 0) => a + b
+    },
+    subtractMultiple : {
+        display : '-',
+        cost : -200,
+        function : (a, b = 0) => a - b
+    },
 
     //slightly more complex
     'multiply': (a, b = 1) => a * b,
@@ -43,7 +68,7 @@ export const EffectDictionary = {
 }
 
 const hexadecimal = (previousEffects) => {
-    for (effect of previousEffects) {
+    for (let effect of previousEffects) {
         effect.a = !effect.a ? null : parseInt(effect.a.toString(16).replace(/[^0-9.]/, ''));
         effect.b = !effect.b ? null : parseInt(effect.b.toString(16).replace(/[^0-9.]/, ''));
     }
