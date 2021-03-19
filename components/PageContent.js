@@ -9,4 +9,3 @@ export default function PageContent({children, color, foregroundColor='black'}) 
         </StyledPageContent>
     );
 }
-

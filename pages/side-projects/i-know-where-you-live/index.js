@@ -26,9 +26,6 @@ export default function WhereAmI() {
         }
         navigator.geolocation.getCurrentPosition(setPosition);
 
-        return () => {
-            navigator.geolocation.clearWatch(watcher);
-        };
     }, []);
 
     return (
