@@ -1,21 +1,18 @@
 
-export class Effect {
-    static effectID = 0;
-    constructor(a = null, b = null, aNum = null, bNum = null, effectKey) {
-        this.a = a;
-        this.b = b;
-        //a and b are its children. a is the left node, b is the right node
-        this.aNum = aNum;
-        this.bNum = bNum;
-        //if they're numbers
-        this.effectKey = effectKey;
-        Effect.effectID++;
-        this.effectID = Effect.effectID;
+
+const hexadecimal = (previousEffects) => {
+    for (let effect of previousEffects) {
+        effect.a = !effect.a ? null : parseInt(effect.a.toString(16).replace(/[^0-9.]/, ''));
+        effect.b = !effect.b ? null : parseInt(effect.b.toString(16).replace(/[^0-9.]/, ''));
     }
 }
 
-Effect.prototype.getEffectFromKey = () => {
-    return EffectDictionary[effectKey];
+const derivative = (effects) => { //just to be clear, this thing makes the entire equation get derivative'd
+
+}
+
+const reciprocal = (effects) => {
+
 }
 
 export const EffectDictionary = {
@@ -67,17 +64,34 @@ export const EffectDictionary = {
     'hexadecimal': hexadecimal
 }
 
-const hexadecimal = (previousEffects) => {
-    for (let effect of previousEffects) {
-        effect.a = !effect.a ? null : parseInt(effect.a.toString(16).replace(/[^0-9.]/, ''));
-        effect.b = !effect.b ? null : parseInt(effect.b.toString(16).replace(/[^0-9.]/, ''));
+export class Effect {
+    static effectID = 0;
+    constructor(a = null, b = null, aNum = null, bNum = null, effectKey, effectID=null) {
+        this.a = a;
+        this.b = b;
+        //a and b are its children. a is the left node, b is the right node
+        this.aNum = aNum;
+        this.bNum = bNum;
+        //if they're numbers
+        this.effectKey = effectKey;
+
+        if(effectID) {
+            if(Effect.effectID < effectID) Effect.effectID = effectID;
+            this.effectID = effectID;
+            Effect.effectID++;
+        } else {
+            Effect.effectID++;
+            this.effectID = Effect.effectID;
+        }
+        
+    }
+
+    getEffectFromKey() {
+        return EffectDictionary[this.effectKey];
+    }
+
+    static fromObj(obj) {
+        return new Effect(obj.a, obj.b, obj.aNum, obj.bNum, obj.effectKey, obj.effectID);
     }
 }
 
-const derivative = (effects) => { //just to be clear, this thing makes the entire equation get derivative'd
-
-}
-
-const reciprocal = (effects) => {
-
-}
