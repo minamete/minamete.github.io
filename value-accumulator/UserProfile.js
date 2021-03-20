@@ -54,6 +54,7 @@ export class UserProfile {
             this.valueAccumulators.insert(addition ? 'addOne' : 'subtractOne', effectID);
         }
         this.calculateChangePerSecond();
+        return this;
     }
 
     calculateChangePerSecond = () => {

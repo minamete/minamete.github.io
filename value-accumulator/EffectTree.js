@@ -64,5 +64,16 @@ export class EffectTree {
         return node.getEffectFromKey().function(aVal,bVal);
     }
 
+    presentFunctions(node = this.root) {
+        let aVal, bVal;
+        if(node.a == null) {
+            aVal = node.aNum
+        } else aVal = this.presentFunctions(node.a);
+        if(node.b == null) {
+            bVal = node.bNum
+        } else bVal = this.presentFunctions(node.b);
+        return node.effectKey + '(' + aVal + ', ' + bVal + ')';    
+    }
+
 }
 

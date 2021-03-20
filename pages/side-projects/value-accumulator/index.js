@@ -49,6 +49,7 @@ export default function ValueAccumUI() {
                         <h1>{userProfile.username}</h1> 
                         <h1>Value: {userProfile.currentValue}</h1>   
                         <h1>Value change per second: {userProfile.changePerSecond}</h1>
+                        <h1>Value change function: {userProfile.valueAccumulators.presentFunctions()}</h1>
                         <button onClick={() => {localStorage.clear(); setActive(false); setUserProfile(); }}>Reset</button>
                     </main>}
             </section>
