@@ -50,7 +50,23 @@ const brianData = [
     "say \"punish me onii-chan\" or something like that",
     "idc about smoothie cat, very appetizing though",
     "ngl i really want you to slap me",
-    "you can't date someone who's 21, that's the meme number, they can't be trusted"
+    "you can't date someone who's 21, that's the meme number, they can't be trusted",
+    "i don't compensate for anything other than my small dick",
+    "i came without any notice to stalk her",
+    "You like men? I like men too!",
+    "Please be patient, my patient.",
+    "I specialize in all genres of hentai",
+    "everyone else is playing rocket league just talk for us",
+    "clearly you haven't heard of stranger danger",
+    "there is a 10 minute choking session waiting for the sender",
+    "he blackmails me into doing so many things for him >~<",
+    "martin i have a 9mm i think you are a mistake",
+    "mmm dw i'll be really gentle 😉",
+    "jk no wtf is the point of assault if i'm gentle",
+    "you know what they say; the taller they are, the more effort it takes to circulate blood to the brain therefore they're superior",
+    "i don't believe in evidence",
+    "i choose what to believe and what not to believe depending on whichever motion benefits me",
+    "shut up pls"
     ]
     
     export default brianData;
