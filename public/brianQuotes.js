@@ -66,7 +66,9 @@ const brianData = [
     "you know what they say; the taller they are, the more effort it takes to circulate blood to the brain therefore they're superior",
     "i don't believe in evidence",
     "i choose what to believe and what not to believe depending on whichever motion benefits me",
-    "shut up pls"
+    "shut up pls",
+    "most people are either book smart or street smart, but in your case you're just not smart",
+    "i thought he was street smart but apparently he's just not smart"
     ]
     
     export default brianData;
