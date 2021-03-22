@@ -1,5 +1,3 @@
-
-
 const brianData = [
     "im about to fuck the shit out of everyone",
     "owo - nuzzles your chest",
