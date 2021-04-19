@@ -11,7 +11,6 @@ export default function Home() {
     <div>
       <Head>
         <title>Side Projects</title>
-        <meta name="google-site-verification" content="sSmNl0f89iLRc_nCuN7VELTmE1TkwxzcY80buj9U2p4" />
       </Head>
 
       <main className={styles.main}>

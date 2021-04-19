@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
 import PageContent from '../components/PageContent'
 import Button from '../components/Button'
-import {useState} from 'react';
+import { useState } from 'react';
 
 const Home = () => {
   const [open, setOpen] = useState(false);
@@ -11,12 +11,12 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <meta name="google-site-verification" content="RXHzVUH7lISEutInvcuIAbF7xI9HFS_ANP5jsQmgFHY" />
+        <meta name="google-site-verification" content="sSmNl0f89iLRc_nCuN7VELTmE1TkwxzcY80buj9U2p4" />
         <title>Home</title>
       </Head>
 
       <main className={styles.main}>
-        <Header text="Minamete: home" open={open} setOpen={setOpen}/>
+        <Header text="Minamete: home" open={open} setOpen={setOpen} />
         <div className={styles.row}>
           <PageContent color="black" foregroundColor="white">
             <h1>Minamete</h1>
@@ -30,17 +30,17 @@ const Home = () => {
           </PageContent>
         </div>
         <div className={styles.row}>
-          <Button color="darkseagreen" text="View my source code!" link="https://github.com/minamete/minamete"/>
+          <Button color="darkseagreen" text="View my source code!" link="https://github.com/minamete/minamete" />
         </div>
         <div className={styles.row}>
 
         </div>
-        <div className={open ? styles.dimmer : null}/>
+        <div className={open ? styles.dimmer : null} />
         <footer className={styles.row}>
           <PageContent color="black" foregroundColor="white">
             <p>No copyright here haha (c) 2021 for CAS purposes</p>
           </PageContent>
-      </footer>
+        </footer>
       </main>
 
 
