@@ -33,7 +33,7 @@ export default function Home() {
             <a href="/side-projects/i-know-where-you-live/">How far am I from Ohio right now?</a>
           </PageContent>
           <PageContent color="white">
-            <p>Are you safe from the wrath of Ohio?</p>
+            <p>Are you safe from the wrath of Ohio? Find out now with this not very accurate app testing the Google Maps!</p>
           </PageContent>
         </div>
         <div className={styles.colrow}>
