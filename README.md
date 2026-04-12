@@ -37,4 +37,4 @@ In your repository settings:
 1. Go to **Settings > Pages**.
 2. Set **Source** to **GitHub Actions**.
 
-Then push to `react`.
+Then push to `main`.
