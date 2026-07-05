@@ -13,24 +13,29 @@ export default function LinksPage() {
             Vague Lee Financial
           </a>
         </p>
+        <p>
+          <a href="https://minamete.github.io/nonograms/" target="_blank" rel="noreferrer">
+            Nonograms
+          </a>
+        </p>
       </div>
       {/* <h3>games</h3> */}
       <h3>contact me</h3>
       <div>
         <p>
-            <a href="mailto:laurayzcao@gmail.com" target="_blank" rel="noreferrer">
-                laurayzcao@gmail.com
-            </a>
+          <a href="mailto:laurayzcao@gmail.com" target="_blank" rel="noreferrer">
+            laurayzcao@gmail.com
+          </a>
         </p>
         <p>
-            <a href="https://www.linkedin.com/in/laura-yz-cao/" target="_blank" rel="noreferrer">
-                linkedin.com/in/laura-yz-cao/
-            </a>
+          <a href="https://www.linkedin.com/in/laura-yz-cao/" target="_blank" rel="noreferrer">
+            linkedin.com/in/laura-yz-cao/
+          </a>
         </p>
         <p>
-            <a href="github.com/minamete" target="_blank" rel="noreferrer">
-                github.com/minamete
-            </a>
+          <a href="github.com/minamete" target="_blank" rel="noreferrer">
+            github.com/minamete
+          </a>
         </p>
       </div>
     </section>
