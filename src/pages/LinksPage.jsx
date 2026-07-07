@@ -20,7 +20,7 @@ export default function LinksPage() {
         </p>
         <p>
           <a href="https://minamete.github.io/lolprodoku" target="_blank" rel="noreferrer">
-            LoL Prodoku
+            LoLProDoku
           </a>
         </p>
       </div>
