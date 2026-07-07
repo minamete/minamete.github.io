@@ -38,7 +38,7 @@ export default function LinksPage() {
           </a>
         </p>
         <p>
-          <a href="github.com/minamete" target="_blank" rel="noreferrer">
+          <a href="https://www.github.com/minamete" target="_blank" rel="noreferrer">
             github.com/minamete
           </a>
         </p>
