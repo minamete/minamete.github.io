@@ -18,6 +18,11 @@ export default function LinksPage() {
             Nonograms
           </a>
         </p>
+        <p>
+          <a href="https://minamete.github.io/lolprodoku" target="_blank" rel="noreferrer">
+            LoL Prodoku
+          </a>
+        </p>
       </div>
       {/* <h3>games</h3> */}
       <h3>contact me</h3>
