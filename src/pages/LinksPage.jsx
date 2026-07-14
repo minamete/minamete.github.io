@@ -23,6 +23,11 @@ export default function LinksPage() {
             LoLProDoku
           </a>
         </p>
+        <p>
+          <a href="https://www.npmjs.com/package/proximal_js" target="_blank" rel="noreferrer">
+            proximal_js (NPM package)
+          </a>
+        </p>
       </div>
       {/* <h3>games</h3> */}
       <h3>contact me</h3>
